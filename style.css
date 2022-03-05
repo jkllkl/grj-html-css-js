@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  border: 5px solid grey;
+}
+
+aside {
+  display: flex;
+  border: 5px solid grey;
+  margin-right: 10px;
+  height: 100%;
+}
+
+aside ul li {
+  list-style: none;
+  padding-right: 30px;
+}
+
+section {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border: 5px solid green;
+  overflow-y: scroll;
+}
+
+section .box {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: green;
+  border-radius: 10px;
+}
+
+section .box img {
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  max-width: 150px;
+  height: 150px;
+  margin-top: 15px;
+}
+
+section .box p {
+  text-align: center;
+  color: white;
+  margin-top: 5px;
+}
+
+@media (max-width: 1200px) {
+  .container section {
+    flex-wrap: wrap;
+  }
+  section .box {
+    background-color: blue;
+  }
+}
+
+@media (max-width: 768px) {
+  .container section {
+    flex-wrap: wrap;
+  }
+  section .box {
+    background-color: grey;
+  }
+}
