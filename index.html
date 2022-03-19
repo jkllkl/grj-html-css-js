@@ -1,11 +1,12 @@
-<!DOCTYspanE html>
+<!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta httspan-equiv="X-UA-Comspanatible" content="IE=edge" />
-    <meta name="viewspanort" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
   <body>
     <div class="main">
       <header>
@@ -13,6 +14,7 @@
       </header>
       <div class="container">
         <aside>
+          <button class="button">추가</button>
           <ul>
             <li>1</li>
             <li>2</li>
@@ -23,27 +25,46 @@
         </aside>
         <section>
           <div class="box">
-            <img src="./images/beer.jpg" alt="1" />
+            <img src="./images/1.jpg" alt="1" />
             <p>1</p>
           </div>
           <div class="box">
-            <img src="./images/champagne.jpg" alt="2" />
+            <img src="./images/2.jpg" alt="2" />
             <p>2</p>
           </div>
           <div class="box">
-            <img src="./images/rum.jpg" alt="3" />
+            <img src="./images/3.jpg" alt="3" />
             <p>3</p>
           </div>
           <div class="box">
-            <img src="./images/soju.png" alt="4" />
+            <img src="./images/4.jpg" alt="4" />
             <p>4</p>
           </div>
           <div class="box">
-            <img src="./images/wine.jpg" alt="5" />
+            <img src="./images/5.jpg" alt="5" />
             <p>5</p>
           </div>
         </section>
       </div>
     </div>
+    <div id="item" action="">
+      <form class="item-form">
+        <p class="close">X</p>
+        <p>이름</p>
+        <input
+          class="name"
+          required
+          maxlength="10"
+          type="text"
+          placeholder="이름"
+        />
+        <p>이미지</p>
+        <input class="image" type="text" placeholder="url" />
+        <p>내용</p>
+        <input class="content" type="text" placeholder="내용" />
+        <input class="submit" type="submit" value="저장" />
+      </form>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
